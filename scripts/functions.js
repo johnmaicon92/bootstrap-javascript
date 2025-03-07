@@ -31,10 +31,7 @@ function getRandomUser() {
     const index = Math.floor(Math.random() * usersRaffle.length);
     return usersRaffle[index];
 }
-console.log(validateEmail("test@example.com")); // true
-console.log(`Featured project: ${getRandomProject()}`);
-console.log(`Total price: $${getTotalPrice()}`);
-console.log(addFeedback("Great website!")); // ["Great website!"]
+
 console.log(`Total cost for 3 shirts: $${calculateShirtPurchase(3, 19.99)}`); // Total cost for 3 shirts
 console.log(`Remaining tickets: ${calculateRemainingTickets(100, 25)}`); // Remaining tickets
 console.log(greetUser("Alice")); // Greeting the user

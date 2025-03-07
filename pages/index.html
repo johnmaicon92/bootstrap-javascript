@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConcertRadar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+</head>
+<body>
+    <nav class="navbar gradient-custom navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="#">ConcertRadar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- Carousel Section -->
+        <div id="carouselExample" class="carousel slide mb-5" data-ride="carousel" style="background-color: gray; border-radius: 10px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex align-items-center" style="margin-left: 200px;">
+                        <div class="col-md-4">
+                            <img src="/static/pitty.jpeg" class="d-block" alt="Event 1" style="height: 80px;">
+                        </div>
+                        <div class="col-md-6" style="margin-top: 10px;">
+                            <h5>Pitty</h5>
+                            <p>Brazilian Rock Extravaganza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center" style="margin-left: 200px;">
+                        <div class="col-md-4">
+                            <img src="/static/vanessa.jpg" class="d-block" alt="Event 2" style="height: 80px;">
+                        </div>
+                        <div class="col-md-6" style="margin-top: 10px;">
+                            <h5>Vanessa da Mata</h5>
+                            <p>A Night of MPB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center" style="margin-left: 200px;">
+                        <div class="col-md-4">
+                            <img src="/static/outroeu.jpg" class="d-block" alt="Event 3" style="height: 80px;">
+                        </div>
+                        <div class="col-md-6" style="margin-top: 10px;">
+                            <h5>Outroeu</h5>
+                            <p>Pop Rhythms Under the Stars</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExample" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExample" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+
+        <!-- Welcome Section -->
+        <div class="row mb-5"  style="background: #6a11cb; background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9)); background: linear-gradient(to right, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9)); border-radius:10px; padding:10px">
+            <div class="col-md-6">
+                <h1 class = "text" style="text-align: left" style="line-height: 58px">Welcome to <br> <span style="font-weight: bold;">Concert</span><span style="font-weight: bold; background: linear-gradient(to right, #ff7e5f, #feb47b); color: transparent; -webkit-background-clip: text;">Radar</span></h1><br>
+                <h2 style="color: black"style="text-align: justify"> Don't miss your favorite concert.</h2>
+                <p style="color: black; text-align: left">Check out our upcoming events <a href="#" style="text-decoration: none; background: linear-gradient(45deg, #ff7e5f, #feb47b); color: transparent; -webkit-background-clip: text;">here</a>.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/mic.jpg" class="img-fluid" alt="Welcome Image" style="height: 224px; border-radius: 10px">
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Concerts</h5>
+                            <p class="card-text">Find out the music style that we bring to you in 2025.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#service1Modal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Merch</h5>
+                            <p class="card-text">Here you can find the perfect shirt from your favorite artist.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#service2Modal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Location</h5>
+                            <p class="card-text">Plan your trip ahead.</p><br>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#service3Modal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div class="modal fade" id="service1Modal" tabindex="-1" aria-labelledby="service1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="service1ModalLabel">Brazilian Music</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        In 2025, we're bringing the vibrant and lively rhythms of Brazil right to you.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="service2Modal" tabindex="-1" aria-labelledby="service2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="service2ModalLabel">Wear the Beat</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Discover the perfect shirt to show off your favorite artist’s style <a href="#" style="text-decoration: none; background: linear-gradient(45deg, #ff7e5f, #feb47b); color: transparent; -webkit-background-clip: text;">here</a>!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="service3Modal" tabindex="-1" aria-labelledby="service3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="service3ModalLabel">The Ultimate Concert Spot</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Plan ahead and secure your spot for an unforgettable live experience!<br>
+                        <a href="#" style="text-decoration: none; background: linear-gradient(45deg, #ff7e5f, #feb47b); color: transparent; -webkit-background-clip: text;">Map</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
